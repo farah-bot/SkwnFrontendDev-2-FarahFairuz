@@ -12,6 +12,12 @@
   justify-content: space-between;
   transition: all 0.3s ease;
   overflow: hidden;
+  flex-shrink: 0;
+}
+
+.visa-card-white {
+  background: white;
+  color: #1a3fb5;
 }
 
 .visa-card:before {
@@ -24,6 +30,10 @@
   background: rgba(255, 255, 255, 0.1);
   transform: rotate(30deg);
   pointer-events: none;
+}
+
+.visa-card-white:before {
+  background: rgba(0, 0, 255, 0.05);
 }
 
 .card-top {
@@ -39,6 +49,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+.chip-blue {
+  filter: invert(21%) sepia(88%) saturate(7487%) hue-rotate(217deg) brightness(92%) contrast(103%);
 }
 
 .card-type {

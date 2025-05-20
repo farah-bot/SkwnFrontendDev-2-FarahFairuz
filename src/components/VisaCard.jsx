@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/VisaCard.css";
 import useWindowSize from "../hooks/useWindowSize";
 
-const VisaCard = ({ cardNumber, name, type }) => {
+const VisaCard = ({ cardNumber, name, type, variant = "blue" }) => {
   const { isMobile } = useWindowSize();
 
   const formatCardNumber = (number) => {
@@ -10,9 +10,15 @@ const VisaCard = ({ cardNumber, name, type }) => {
   };
 
   return (
-    <div className={`visa-card ${isMobile ? "visa-card-mobile" : ""}`}>
+    <div
+      className={`visa-card ${isMobile ? "visa-card-mobile" : ""} ${
+        variant === "white" ? "visa-card-white" : ""
+      }`}
+    >
       <div className="card-top">
-        <div className="card-chip-icon"></div>
+        <div
+          className={`card-chip-icon ${variant === "white" ? "chip-blue" : ""}`}
+        ></div>
         <span className="card-type">{type}</span>
       </div>
       <div className="card-details">
