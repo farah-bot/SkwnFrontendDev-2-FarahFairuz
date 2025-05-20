@@ -1,66 +1,146 @@
 .visa-card {
-    background: linear-gradient(to right, #4287f5, #42c8f5);
-    border-radius: 12px;
-    padding: 20px;
-    color: white;
-    width: 100%;
-    height: 180px;
-    position: relative;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  background: linear-gradient(to right, #4287f5, #42c8f5);
+  border-radius: 16px;
+  padding: 20px;
+  color: white;
+  width: 100%;
+  height: 180px;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(66, 135, 245, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.visa-card:before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(30deg);
+  pointer-events: none;
+}
+
+.card-chip-icon {
+  width: 40px;
+  height: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg fill='white' height='800px' width='800px' version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 511 511' xml:space='preserve'%3E%3Cpath d='M455.5,56h-400C24.897,56,0,80.897,0,111.5v288C0,430.103,24.897,455,55.5,455h400c30.603,0,55.5-24.897,55.5-55.5v-288C511,80.897,486.103,56,455.5,56z M464,248H343v-56.5c0-4.687,3.813-8.5,8.5-8.5H464V248z M343,263h121v65H343V263z M479,223h17v65h-17V223z M479,208v-65h17v65H479z M464,168H351.5c-12.958,0-23.5,10.542-23.5,23.5V408H183V103h272.5c4.687,0,8.5,3.813,8.5,8.5V168z M168,248H47v-65h121V248z M32,288H15v-65h17V288z M47,263h121v65H47V263z M263,88V71h137v17H263z M248,88H111V71h137V88z M168,103v65H47v-56.5c0-4.687,3.813-8.5,8.5-8.5H168z M32,208H15v-65h17V208z M15,303h17v65H15V303z M47,343h121v65H55.5c-4.687,0-8.5-3.813-8.5-8.5V343z M248,423v17H111v-17H248z M263,423h137v17H263V423z M343,408v-65h121v56.5c0,4.687-3.813,8.5-8.5,8.5H343z M479,303h17v65h-17V303z M496,111.5V128h-17v-16.5c0-12.958-10.542-23.5-23.5-23.5H415V71h40.5C477.832,71,496,89.168,496,111.5z M55.5,71H96v17H55.5C42.542,88,32,98.542,32,111.5V128H15v-16.5C15,89.168,33.168,71,55.5,71z M15,399.5V383h17v16.5c0,12.958,10.542,23.5,23.5,23.5H96v17H55.5C33.168,440,15,421.832,15,399.5z M455.5,440H415v-17h40.5c12.958,0,23.5-10.542,23.5-23.5V383h17v16.5C496,421.832,477.832,440,455.5,440z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: 20px;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-number {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.card-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card-brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.card-type {
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.visa-logo {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: -1px;
+}
+
+
+.visa-card-mobile {
+  height: 160px;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.visa-card-mobile .card-chip-icon {
+  width: 30px;
+  height: 22px;
+  margin-bottom: 15px;
+}
+
+.visa-card-mobile .card-number {
+  font-size: 16px;
+}
+
+.visa-card-mobile .card-name {
+  font-size: 14px;
+}
+
+.visa-card-mobile .card-type {
+  font-size: 10px;
+  padding: 3px 8px;
+}
+
+.visa-card-mobile .visa-logo {
+  font-size: 18px;
+}
+
+
+.visa-card-tablet {
+  width: 320px;
+  margin-right: 15px;
+}
+
+
+@media (min-width: 992px) {
+  .visa-card {
+    width: 360px;
+    height: 200px;
+    padding: 25px;
+    margin-right: 20px;
   }
   
   .card-chip-icon {
-    width: 40px;
-    height: 30px;
-    background-image: url("data:image/svg+xml,%3Csvg fill='white' height='800px' width='800px' version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 511 511' xml:space='preserve'%3E%3Cpath d='M455.5,56h-400C24.897,56,0,80.897,0,111.5v288C0,430.103,24.897,455,55.5,455h400c30.603,0,55.5-24.897,55.5-55.5v-288C511,80.897,486.103,56,455.5,56z M464,248H343v-56.5c0-4.687,3.813-8.5,8.5-8.5H464V248z M343,263h121v65H343V263z M479,223h17v65h-17V223z M479,208v-65h17v65H479z M464,168H351.5c-12.958,0-23.5,10.542-23.5,23.5V408H183V103h272.5c4.687,0,8.5,3.813,8.5,8.5V168z M168,248H47v-65h121V248z M32,288H15v-65h17V288z M47,263h121v65H47V263z M263,88V71h137v17H263z M248,88H111V71h137V88z M168,103v65H47v-56.5c0-4.687,3.813-8.5,8.5-8.5H168z M32,208H15v-65h17V208z M15,303h17v65H15V303z M47,343h121v65H55.5c-4.687,0-8.5-3.813-8.5-8.5V343z M248,423v17H111v-17H248z M263,423h137v17H263V423z M343,408v-65h121v56.5c0,4.687-3.813,8.5-8.5,8.5H343z M479,303h17v65h-17V303z M496,111.5V128h-17v-16.5c0-12.958-10.542-23.5-23.5-23.5H415V71h40.5C477.832,71,496,89.168,496,111.5z M55.5,71H96v17H55.5C42.542,88,32,98.542,32,111.5V128H15v-16.5C15,89.168,33.168,71,55.5,71z M15,399.5V383h17v16.5c0,12.958,10.542,23.5,23.5,23.5H96v17H55.5C33.168,440,15,421.832,15,399.5z M455.5,440H415v-17h40.5c12.958,0,23.5-10.542,23.5-23.5V383h17v16.5C496,421.832,477.832,440,455.5,440z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    margin-bottom: 20px;
-  }
-  
-  
-  
-  
-  .card-details {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    width: 45px;
+    height: 35px;
+    margin-bottom: 25px;
   }
   
   .card-number {
-    font-size: 20px;
-    letter-spacing: 2px;
-    font-weight: 500;
+    font-size: 22px;
   }
   
   .card-name {
-    font-size: 16px;
-    font-weight: 600;
-  }
-  
-  
-  .card-brand {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-  }
-  
-  .card-type {
-    font-size: 12px;
-    text-transform: uppercase;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 4px 10px;
-    border-radius: 20px;
+    font-size: 18px;
   }
   
   .visa-logo {
-    font-size: 20px;
-    font-weight: bold;
-    font-style: italic;
-    letter-spacing: -1px;
+    font-size: 24px;
   }
+}
+
+@media (min-width: 1200px) {
+  .cards-slider {
+    gap: 20px;
+  }
+}
