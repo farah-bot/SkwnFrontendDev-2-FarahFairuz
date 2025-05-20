@@ -3,8 +3,8 @@
   border-radius: 16px;
   padding: 20px;
   color: white;
-  width: 100%;
-  height: 180px;
+  width: 360px;
+  height: 200px;
   position: relative;
   box-shadow: 0 10px 20px rgba(66, 135, 245, 0.2);
   display: flex;
@@ -26,6 +26,12 @@
   pointer-events: none;
 }
 
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .card-chip-icon {
   width: 40px;
   height: 30px;
@@ -33,7 +39,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  margin-bottom: 20px;
+}
+
+.card-type {
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .card-details {
@@ -44,28 +54,18 @@
 
 .card-number {
   font-size: 20px;
-  letter-spacing: 2px;
   font-weight: 500;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card-name {
   font-size: 16px;
-  font-weight: 600;
-}
-
-.card-brand {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.card-type {
-  font-size: 12px;
-  text-transform: uppercase;
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 4px 10px;
-  border-radius: 20px;
+  font-weight: bold;
 }
 
 .visa-logo {
@@ -75,17 +75,16 @@
   letter-spacing: -1px;
 }
 
-
 .visa-card-mobile {
+  width: 280px;
   height: 160px;
   padding: 15px;
   border-radius: 12px;
 }
 
 .visa-card-mobile .card-chip-icon {
-  width: 30px;
-  height: 22px;
-  margin-bottom: 15px;
+  width: 28px;
+  height: 20px;
 }
 
 .visa-card-mobile .card-number {
@@ -97,50 +96,9 @@
 }
 
 .visa-card-mobile .card-type {
-  font-size: 10px;
-  padding: 3px 8px;
+  font-size: 12px;
 }
 
 .visa-card-mobile .visa-logo {
-  font-size: 18px;
-}
-
-
-.visa-card-tablet {
-  width: 320px;
-  margin-right: 15px;
-}
-
-
-@media (min-width: 992px) {
-  .visa-card {
-    width: 360px;
-    height: 200px;
-    padding: 25px;
-    margin-right: 20px;
-  }
-  
-  .card-chip-icon {
-    width: 45px;
-    height: 35px;
-    margin-bottom: 25px;
-  }
-  
-  .card-number {
-    font-size: 22px;
-  }
-  
-  .card-name {
-    font-size: 18px;
-  }
-  
-  .visa-logo {
-    font-size: 24px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .cards-slider {
-    gap: 20px;
-  }
+  font-size: 16px;
 }

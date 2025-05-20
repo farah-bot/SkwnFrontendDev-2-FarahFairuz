@@ -1,13 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { CreditCard, DollarSign, ArrowUp, HelpCircle } from "lucide-react";
 import "../styles/ServiceMenu.css";
 
 const ServiceMenu = () => {
   const services = [
-    { id: 1, name: "Card", icon: "card-icon" },
-    { id: 2, name: "Finance", icon: "finance-icon", link: "/account-finance" },
-    { id: 3, name: "Top Up", icon: "topup-icon" },
-    { id: 4, name: "Help", icon: "help-icon" },
+    { id: 1, name: "Card", icon: <CreditCard size={24} color="#4287f5" /> },
+    {
+      id: 2,
+      name: "Finance",
+      icon: <DollarSign size={24} color="#4287f5" />,
+      link: "/account-finance",
+    },
+    { id: 3, name: "Top Up", icon: <ArrowUp size={24} color="#4287f5" /> },
+    { id: 4, name: "Help", icon: <HelpCircle size={24} color="#4287f5" /> },
   ];
 
   return (
@@ -20,15 +25,15 @@ const ServiceMenu = () => {
         {services.map((service) => {
           const content = (
             <>
-              <div className={`service-icon ${service.icon}`}></div>
+              <div className="service-icon">{service.icon}</div>
               <span className="service-name">{service.name}</span>
             </>
           );
 
           return service.link ? (
-            <Link to={service.link} className="service-item" key={service.id}>
+            <a href={service.link} className="service-item" key={service.id}>
               {content}
-            </Link>
+            </a>
           ) : (
             <div className="service-item" key={service.id}>
               {content}
