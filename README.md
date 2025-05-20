@@ -22,7 +22,7 @@ Visit the live demo at: [https://skwnfrontenddev-2-farahfairuz.vercel.app/](http
 1. Clone the repository
    ```bash
    git clone https://github.com/farah-bot/SkwnFrontendDev-2-FarahFairuz.git
-   cd SkwnFrontendDev-Banking-YourName
+   cd SkwnFrontendDev-2-FarahFairuz
    ```
 
 2. Install dependencies
