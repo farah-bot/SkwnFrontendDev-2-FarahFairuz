@@ -4,7 +4,7 @@
 ![Banking App Screenshot](./src/assets/banking-app.png)
 
 ## 🚀 Live Demo
-Visit the live demo at: [https://banking-app-demo.vercel.app](https://banking-app-demo.vercel.app)
+Visit the live demo at: [https://skwnfrontenddev-2-farahfairuz.vercel.app/](https://skwnfrontenddev-2-farahfairuz.vercel.app/)
 
 ## 🛠️ Technologies Used
 - React.js
