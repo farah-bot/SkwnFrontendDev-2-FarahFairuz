@@ -1,0 +1,38 @@
+.transaction-history {
+    padding: 0 20px 20px;
+  }
+  
+  .right-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .category-dropdown {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .category-dropdown span {
+    margin-right: 5px;
+  }
+  
+  .transaction-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  @media (max-width: 380px) {
+    .transaction-history {
+      padding: 0 15px 15px;
+    }
+    
+    .category-dropdown {
+      margin-right: 10px;
+      font-size: 12px;
+    }
+  }

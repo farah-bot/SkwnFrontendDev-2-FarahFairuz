@@ -48,10 +48,10 @@ const HomePage = () => {
       <ServiceMenu />
 
       <section className="activity-section">
-        <div className="section-header">
+        {/* <div className="section-header">
           <h2>Activity</h2>
           <span className="see-all">See All</span>
-        </div>
+        </div> */}
         <TransactionHistory transactions={transactions} />
       </section>
 

@@ -82,10 +82,10 @@ const AccountFinance = () => {
 
         <section className="history-section">
           <div className="section-header">
-            <h2 className="section-title">History</h2>
+            {/* <h2 className="section-title">History</h2>
             <div className="category-dropdown">
               Category <i className="dropdown-arrow">▼</i>
-            </div>
+            </div> */}
           </div>
 
           <TransactionHistory transactions={transactions} />

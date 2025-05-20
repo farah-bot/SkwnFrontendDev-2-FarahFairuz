@@ -1,12 +1,53 @@
-# React + Vite
+# SkwnFrontendDev-2-FarahFairuz
+## Banking App - Modern Financial Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Banking App Screenshot](./src/assets/banking-app.png)
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+Visit the live demo at: [https://banking-app-demo.vercel.app](https://banking-app-demo.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Technologies Used
+- React.js
+- jQuery
+- CSS3
+- React Router
 
-## Expanding the ESLint configuration
+## 🏁 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- Node.js (v14.0.0 or higher)
+- npm (v6.0.0 or higher)
+
+### Installation
+1. Clone the repository
+   ```bash
+   git clone https://github.com/farah-bot/SkwnFrontendDev-2-FarahFairuz.git
+   cd SkwnFrontendDev-Banking-YourName
+   ```
+
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+
+3. Start the development server
+   ```bash
+   npm start
+   ```
+
+4. Open your browser and navigate to `http://localhost:3000`
+
+## 📂 Project Structure
+```
+├── src/
+│   ├── components/       # Reusable UI components
+│   ├── pages/            # Home and Finance pages
+│   ├── styles/           # CSS styles
+│   ├── App.jsx           # Main App component
+└── public/               # Public assets
+```
+
+## 🚀 Build for Production
+```bash
+npm run build
+```
