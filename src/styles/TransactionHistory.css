@@ -1,5 +1,4 @@
-
-  .right-actions {
+.right-actions {
     display: flex;
     align-items: center;
   }
@@ -31,9 +30,6 @@
   }
   
   @media (max-width: 380px) {
-    .transaction-history {
-      padding: 0 15px 15px;
-    }
     
     .category-dropdown {
       margin-right: 10px;
