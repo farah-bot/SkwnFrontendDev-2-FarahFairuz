@@ -1,21 +1,21 @@
 import React from "react";
-// import "../styles/Header.css";
-// import profilePlaceholder from "/images/foto.png";
+import "../styles/Header.css";
 
-const Header = ({ name, hasProfilePic }) => {
+const Header = ({ name, userImage }) => {
   return (
     <div className="header">
       <div className="greeting">
         <p>Hello,</p>
-        <h1>{name}!</h1>
+        <h2>{name}!</h2>
       </div>
-      {hasProfilePic && (
+      {userImage && (
         <div className="profile-pic">
-          {/* <img src={profilePlaceholder} alt="Profile" /> */}
+          <img src={userImage} alt="Profile" />
         </div>
       )}
     </div>
   );
 };
+
 
 export default Header;

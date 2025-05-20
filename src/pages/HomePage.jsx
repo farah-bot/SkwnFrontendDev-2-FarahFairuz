@@ -29,7 +29,7 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
-      <Header userName="Aurellia" userImage="https://via.placeholder.com/50" />
+      <Header name="Aurellia" userImage="/images/download-1.jpg" />
 
       <section className="cards-section">
         <div className="section-header">
