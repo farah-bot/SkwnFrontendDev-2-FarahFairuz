@@ -12,8 +12,8 @@ const Header = ({ name, userImage }) => {
       }`}
     >
       <div className="greeting">
-        <p>Hello,</p>
-        <h2>{name}!</h2>
+        <p style={{ marginBottom: 4 }}>Hello,</p>
+        <h2 style={{ marginTop: 0 }}>{name}!</h2>
       </div>
       {userImage && (
         <div className="profile-pic">

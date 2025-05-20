@@ -28,7 +28,7 @@ const HomePage = () => {
   ];
 
   return (
-    <div className="home-page">
+    <div className="home-page" style={{ paddingBottom: "70px" }}>
       <Header name="Aurellia" userImage="/images/download-1.jpg" />
 
       <section className="cards-section">
