@@ -1,0 +1,18 @@
+.account-summary {
+    padding: 24px 16px;
+    background: linear-gradient(120deg, #4285f4, #07bcd4);
+    color: white;
+    border-radius: 0 0 12px 12px;
+    text-align: left;
+  }
+  
+  .account-balance {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .account-date {
+    font-size: 14px;
+    opacity: 0.8;
+  }

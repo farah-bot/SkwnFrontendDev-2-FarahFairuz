@@ -1,6 +1,6 @@
 import React from "react";
 // import "../styles/Header.css";
-// import profilePlaceholder from "../assets/foto.jpg";
+// import profilePlaceholder from "/images/foto.png";
 
 const Header = ({ name, hasProfilePic }) => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-// import "../styles/AccountSummary.css";
+import "../styles/AccountSummary.css";
 
 const AccountSummary = ({ balance, date }) => {
   return (
