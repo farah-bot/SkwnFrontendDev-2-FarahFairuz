@@ -1,5 +1,6 @@
 import React from "react";
 import { CreditCard, DollarSign, ArrowUp, HelpCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 import "../styles/ServiceMenu.css";
 
 const ServiceMenu = () => {
@@ -31,9 +32,9 @@ const ServiceMenu = () => {
           );
 
           return service.link ? (
-            <a href={service.link} className="service-item" key={service.id}>
+            <Link to={service.link} className="service-item" key={service.id}>
               {content}
-            </a>
+            </Link>
           ) : (
             <div className="service-item" key={service.id}>
               {content}
